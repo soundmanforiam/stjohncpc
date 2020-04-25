@@ -1,1 +1,0 @@
-This is a Custom Wordpress Template for the St. John Cumberland Presbyterian Church in Arlington Texas.
