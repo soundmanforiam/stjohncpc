@@ -1,0 +1,518 @@
+/*
+
+
+
+Theme Name: St. John CPC
+
+
+
+Theme URI: http://www.stjohncpc.org
+
+
+
+Author: Charlie Holmes
+
+
+
+Author URI: http://www.charlieholmes.net    
+
+
+
+Description: Church Website
+
+
+
+License: GNU General Public License v2 or later
+
+
+
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+
+
+Tags: 
+
+
+
+Text Domain: 
+
+
+
+*/
+
+
+
+
+
+body{
+
+    background:#FFF url(http://www.stjohncpc.org/images/cross-bg.jpg) no-repeat;
+
+    background-size:cover;
+
+    background-position:center center;
+
+    background-attachment:fixed;
+
+}
+
+
+
+
+
+.header{
+    background:url(http://www.stjohncpc.org/images/header-bg.jpg) no-repeat;
+    background-size:cover;
+    background-position:center bottom;
+    color:#FFF;
+    text-align:center;
+    margin-bottom:0;
+    min-height: 270px !important;
+}
+
+
+
+.logo{
+
+
+
+    max-width:500px;
+
+
+
+    width:100%;
+
+
+
+    height:auto;
+
+
+
+    max-height:138px;
+
+
+
+    margin:0 auto;
+
+
+
+}
+
+
+
+.front-page-content{
+
+    padding: 20px 20px 20px 0;
+
+}
+
+/*  Drop Down Menu CSS taken from tutorial at http://seorave.com/style-wordpress-menus-dropdowns/ */
+
+#main-nav   {
+
+    z-index: 100000;
+
+    height: 30px; /* set to the height you want your menu to be */
+
+    margin: 0 0 10px; /* just to give some spacing */
+
+}
+
+#main-nav ul    {
+
+    margin: 0; padding: 0; /* only needed if you have not done a CSS reset */
+
+    z-index: 100000;
+    text-align: center;
+
+
+
+}
+
+#main-nav li    {
+
+    display: inline-block;
+    text-align: center;
+    line-height: 30px; /* this should be the same as your #main-nav height */
+
+    height: 30px; /* this should be the same as your #main-nav height */
+
+    margin: 0; padding: 0; /* only needed if you don't have a reset */
+
+    position: relative; /* this is needed in order to position sub menus */
+
+    z-index: 100000;
+
+}
+
+#main-nav li a  {
+
+    display: block;
+
+    height: 30px;
+
+    line-height: 30px;
+
+    padding: 0 15px;
+
+    color: #fff;
+
+}
+
+#main-nav .current-menu-item a, #main-nav .current_page_item a, #main-nav a:hover {
+
+    color: #00667d;
+
+    background: #F1F1F1;
+
+}
+
+
+
+#main-nav ul ul { /* this targets all sub menus */
+
+    display: none; /* hide all sub menus from view */
+
+    position: absolute;
+
+    top: 30px; /* this should be the same height as the top level menu -- height + padding + borders */
+
+}
+
+#main-nav ul ul li { /* this targets all submenu items */
+
+    /* float: none;  overwriting our float up above */
+
+    width: 150px; /* set to the width you want your sub menus to be. This needs to match the value we set below */
+
+    z-index: 100000;
+
+}
+
+#main-nav ul ul li a { /* target all sub menu item links */
+
+    padding: 5px 10px; /* give our sub menu links a nice button feel */
+
+}
+
+
+
+#menu-navbar li:hover > ul {
+
+    display: block; /* show sub menus when hovering over a parent */
+
+    background-color: #F1F1F1;
+
+    color: #00667d;
+
+}
+
+
+
+#main-nav ul ul li a {
+
+    /* background-color: #F1F1F1; */
+
+    color: #00667d;
+
+}
+
+#menu-navbar li:hover > .sub-menu ul li {
+
+    background-color: #F1F1F1;
+
+    color: #00667d;
+
+}
+
+#main-nav ul ul li ul a{
+
+    /* target all second, third, and deeper level sub menus */
+
+    left: 150px; /* this needs to match the sub menu width set above -- width + padding + borders */
+
+    top: 0; /* this ensures the sub menu starts in line with its parent item */
+
+    color: #00667d;
+
+
+
+}
+
+
+
+
+
+
+
+.main-content-container{
+
+    /* margin-top: 10px !important; */
+
+    margin-bottom: 30px;
+
+    /* background-color: #FFF; */
+
+
+
+}
+
+
+
+.content-bg{
+
+
+
+    background-color: transparent;
+
+
+
+    color:#333;
+
+
+
+    padding-left:20px;
+
+
+
+    padding-right:20px;
+
+
+
+    min-height:400px;
+
+
+
+    padding-bottom:20px;
+
+    padding-top: 0px !important;
+    margin-top: 10px !important;
+
+}
+
+
+
+.contact-us{
+
+
+
+    background:#F9F9F9;
+
+
+
+    color:#333;
+
+
+
+    padding-left:20px;
+
+
+
+    padding-right:20px;
+
+
+
+    border-top:2px solid #F1F1F1;
+
+
+
+}
+
+
+
+.footer{
+
+
+
+    background:#333 url(http://www.stjohncpc.org/images/table-bg.jpg) no-repeat;
+
+
+
+    background-size:cover;
+
+
+
+    background-position:center top;
+
+
+
+    color:#FFF;
+
+
+
+    padding-left:30px;
+
+
+
+    padding-right:30px;
+
+
+
+    min-height: 100px;
+
+
+
+}
+
+
+
+.card-img{
+
+
+
+    width:100%;
+
+
+
+    height:auto;
+
+
+
+    margin:0 0 15px 0;
+
+
+
+}
+
+
+
+.campus-map-img{
+
+
+
+    margin-bottom:20px;
+
+
+
+    height: 100% !important;
+
+
+
+    width: 100% !important;
+
+
+
+
+
+
+
+}
+
+
+
+.sermons-card{
+
+
+
+    background-color:#00667d;
+
+
+
+    color:white;
+
+
+
+    text-align: center;
+
+
+
+    border-radius: 10px;
+
+
+
+    /* margin-bottom: 20px; */
+
+    /* margin-top: 20px; */
+
+
+
+    font-size: larger;
+
+    z-index: 10;
+
+
+
+}
+
+
+
+.sermons-card a{
+
+
+
+    color: white;
+
+
+
+}
+
+
+
+.blue-card{
+
+
+
+    background-color: #00667d;
+
+
+
+    color: white;
+
+
+
+    text-align: center;
+
+
+
+    border-radius: 10px;
+
+
+
+    margin-bottom: 10px;
+
+
+
+  
+
+
+
+}
+
+
+
+.blue-card a{
+
+
+
+    color: white;
+
+
+
+}
+
+
+
+.blue-text{
+
+
+
+    color: #00667d
+
+
+
+}
+
+
+
+.grey-text{
+
+
+
+    color: #525151
+
+
+
+}
+
+
+
